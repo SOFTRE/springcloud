@@ -1,0 +1,35 @@
+# 注释版本
+server:
+  port: 18084
+spring:
+  application:
+    name: api-gateway # 应用名
+  cloud:
+    gateway:
+      routes:
+        #id唯一标识，可自定义
+        - id: user-service-route
+          #路由的服务地址
+          uri: lb://user-provider
+          #        uri: http://localhost:18081
+          # 路由拦截的地址配置（断言）
+          predicates:
+            #- Path=/user/**  #指定具体的路径条件：以/user开头的请求 都转发给uri指定的地址
+            - Path=/api/**  #指定具体的路径条件：所有请求 都转发给uri指定的地址
+          #        - Path=/**
+          filters:
+            #设置前缀过滤器：localhost:18084/findById-->路由到localhost:18081/user/findById
+            #        - PrefixPath=/user
+            - StripPrefix=1 #请求：localhost:18084/api/user-->localhost:18081/user   数字1表示以/开头的路径进行削减
+            - MyParam=name,xxm
+      # 配置全局默认过滤器
+      default-filters:
+        # 往响应过滤器中加入信息
+        # 定义全局的默认的过滤器，就是，所有的请求头中添加一个响应头，
+        - AddResponseHeader=X-Response-Default-MyName,xxm
+# Eureka服务中心配置
+eureka:
+  client:
+    service-url:
+      # 注册Eureka Server集群
+      defaultZone: http://127.0.0.1:7001/eureka

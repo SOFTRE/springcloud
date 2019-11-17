@@ -1,0 +1,28 @@
+# 注释版本
+spring:
+  cloud:
+    config:
+      name: user-provider # 与远程仓库中的配置文件的application保持一致，{application}-{profile}.yml
+      profile: dev # 远程仓库中的配置文件的profile保持一致
+      label: master # 远程仓库中的版本保持一致
+      discovery:
+        enabled: true # 使用配置中心
+        service-id: config-server # 配置中心服务id
+
+
+#向Eureka服务中心集群注册服务
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka
+# com.itheima 包下的日志级别都为Debug
+#logging:
+#  level:
+#    com: debug
+#  - bootstrap.yml文件是SpringBoot的默认配置文件，而且其加载时间相比于application.yml更早。
+#  - bootstrap.yml和application.yml都是默认配置文件，但定位不同
+#    - bootstrap.yml可以理解成系统级别的一些参数配置，一般不会变动
+#    - application.yml用来定义应用级别的参数
+#  - 搭配spring-cloud-config使用application.yml的配置可以动态替换。
+#  - bootstrap.yml相当于项目启动的引导文件，内容相对固定
+#  - application.yml文件是微服务的常规配置参数，变化比较频繁

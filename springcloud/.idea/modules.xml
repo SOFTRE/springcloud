@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/springcloud_parent/spring_cloud_gateway/spring_cloud_gateway.iml" filepath="$PROJECT_DIR$/springcloud_parent/spring_cloud_gateway/spring_cloud_gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud_parent/springcloud_config_server/springcloud_config_server.iml" filepath="$PROJECT_DIR$/springcloud_parent/springcloud_config_server/springcloud_config_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud_parent/springcloud_eureka_server/springcloud_eureka_server.iml" filepath="$PROJECT_DIR$/springcloud_parent/springcloud_eureka_server/springcloud_eureka_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud_parent/springcloud_movie_consumer/springcloud_movie_consumer.iml" filepath="$PROJECT_DIR$/springcloud_parent/springcloud_movie_consumer/springcloud_movie_consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud_parent/springcloud_parent.iml" filepath="$PROJECT_DIR$/springcloud_parent/springcloud_parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud_rest_movie/springcloud_rest_movie.iml" filepath="$PROJECT_DIR$/springcloud_rest_movie/springcloud_rest_movie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud_rest_user/springcloud_rest_user.iml" filepath="$PROJECT_DIR$/springcloud_rest_user/springcloud_rest_user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud_parent/springcloud_user_provider/springcloud_user_provider.iml" filepath="$PROJECT_DIR$/springcloud_parent/springcloud_user_provider/springcloud_user_provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud_parent/springcloud_user_provider02/springcloud_user_provider (1).iml" filepath="$PROJECT_DIR$/springcloud_parent/springcloud_user_provider02/springcloud_user_provider (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud_parent/springcloud_user_provider02/springcloud_user_provider02.iml" filepath="$PROJECT_DIR$/springcloud_parent/springcloud_user_provider02/springcloud_user_provider02.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/springcloud_parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud_parent/spring_cloud_gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud_parent/springcloud_config_server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud_parent/springcloud_eureka_server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud_parent/springcloud_movie_consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud_parent/springcloud_user_provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud_parent/springcloud_user_provider02" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud_rest_movie" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud_rest_user" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
